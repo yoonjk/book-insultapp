@@ -36,11 +36,8 @@ public class InsultGenerator {
 				rs.close();;
 				connection.close();
 			}
-		} catch(Exceptoin e) {
+		} catch(Exception e) {
 			return "Database connection problem!";
-		}
-		if (vowels.indexOf(firstAdjective.charAt(0)) == -1) {
-			article = "a";
 		}
 		return theInsult;
 	}
